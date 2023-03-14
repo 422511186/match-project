@@ -1,0 +1,19 @@
+server:
+  port: 5003
+spring:
+  application:
+    name: websocket-demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/garbage_sorting_game?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useAffectedRows=true
+    username: root
+    password: 123
+  redis:
+    #    host: 127.0.0.1
+    #    host: 192.168.111.132 #虚拟机
+    host: 124.222.182.217 #云服务器
+    port: 6379
+    password: 12345678
+logging:
+  level:
+    root: info
